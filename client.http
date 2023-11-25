@@ -30,6 +30,13 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Qual a melhor linguagem de programação?",
-  "content": "Estou estudando programação e gostaria de saber qual a melhor linguagem para se aprender."
+  "title": "How to create a question?",
+  "content": "I want to create a question, but I don't know how to do it."
 }
+
+###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
