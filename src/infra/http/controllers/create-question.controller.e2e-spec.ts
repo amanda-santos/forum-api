@@ -6,7 +6,7 @@ import request from 'supertest';
 import { AppModule } from '@/infra/app.module';
 import { PrismaService } from '@/infra/database/prisma/prisma.service';
 
-describe('Create question (E2E)', () => {
+describe('create question (E2E)', () => {
   let app: INestApplication;
   let prisma: PrismaService;
   let jwt: JwtService;

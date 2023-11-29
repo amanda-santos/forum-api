@@ -5,7 +5,7 @@ import request from 'supertest';
 import { AppModule } from '@/infra/app.module';
 import { PrismaService } from '@/infra/database/prisma/prisma.service';
 
-describe('Create Account (E2E)', () => {
+describe('create Account (E2E)', () => {
   let app: INestApplication;
   let prisma: PrismaService;
 
