@@ -12,6 +12,7 @@ import { EditAnswerUseCase } from '@/domain/forum/application/use-cases/edit-ans
 import { DeleteAnswerUseCase } from '@/domain/forum/application/use-cases/delete-answer';
 import { FetchQuestionAnswersUseCase } from '@/domain/forum/application/use-cases/fetch-question-answers';
 import { ChooseQuestionBestAnswerUseCase } from '@/domain/forum/application/use-cases/choose-question-best-answer';
+import { CommentOnQuestionUseCase } from '@/domain/forum/application/use-cases/comment-on-question';
 
 import { GetQuestionBySlugController } from './controllers/get-question-by-slug.controller';
 import { AuthenticateController } from './controllers/authenticate.controller';
@@ -27,6 +28,7 @@ import { EditAnswerController } from './controllers/edit-answer.controller';
 import { DeleteAnswerController } from './controllers/delete-answer.controller';
 import { FetchQuestionAnswersController } from './controllers/fetch-question-answers.controller';
 import { ChooseQuestionBestAnswerController } from './controllers/choose-question-best-answer.controller';
+import { CommentOnQuestionController } from './controllers/comment-on-question.controller';
 
 @Module({
   imports: [DatabaseModule, CryptographyModule],
@@ -34,6 +36,7 @@ import { ChooseQuestionBestAnswerController } from './controllers/choose-questio
     AuthenticateController,
     CreateAccountController,
 
+    CommentOnQuestionController,
     CreateQuestionController,
     EditQuestionController,
     DeleteQuestionController,
@@ -50,6 +53,7 @@ import { ChooseQuestionBestAnswerController } from './controllers/choose-questio
     AuthenticateStudentUseCase,
     RegisterStudentUseCase,
 
+    CommentOnQuestionUseCase,
     CreateQuestionUseCase,
     EditQuestionUseCase,
     DeleteQuestionUseCase,
