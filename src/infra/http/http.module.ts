@@ -39,6 +39,7 @@ import { CommentOnAnswerController } from './controllers/comment-on-answer.contr
 import { DeleteAnswerCommentController } from './controllers/delete-answer-comment.controller';
 import { FetchQuestionCommentsController } from './controllers/fetch-question-comments.controller';
 import { FetchAnswerCommentsController } from './controllers/fetch-answer-comments.controller';
+import { UploadAttachmentController } from './controllers/upload-attachment.controller';
 
 @Module({
   imports: [DatabaseModule, CryptographyModule],
@@ -65,6 +66,8 @@ import { FetchAnswerCommentsController } from './controllers/fetch-answer-commen
     CommentOnAnswerController,
     DeleteAnswerCommentController,
     FetchAnswerCommentsController,
+
+    UploadAttachmentController,
   ],
   providers: [
     AuthenticateStudentUseCase,
