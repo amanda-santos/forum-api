@@ -4,6 +4,7 @@ import { AggregateRoot } from '@/core/entities/aggregate-root';
 import { Slug } from './value-objects/slug';
 import { UniqueEntityID } from '@/core/entities/unique-entity-id';
 import { Optional } from '@/core/types/optional';
+
 import { QuestionAttachmentList } from './question-attachment-list';
 import { QuestionBestAnswerChosenEvent } from '../events/question-best-answer-chosen-event';
 
