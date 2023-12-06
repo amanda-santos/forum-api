@@ -11,3 +11,9 @@ services:
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=forum-db
       - PGDATA=/data/postgres
+  cache:
+    container_name: forum-db-cache
+    image: redis
+    ports:
+      - 6379:6379
+
