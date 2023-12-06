@@ -1,38 +1,62 @@
+<h1 align="center">
+  Forum API
+</h1>
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/amanda-santos/forum-api">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/amanda-santos/forum-api">
+
+  <a href="https://github.com/amanda-santos/forum-api/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/amanda-santos/forum-api">
+  </a>
+
+  <a href="https://github.com/amanda-santos/forum-api/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/amanda-santos/forum-api">
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## 📝 About the project
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p>
+  This is a forum application API where it's possible to sign up, login, and create and manage questions, answers, and comments.
+</p>
+<p>
+  This project was built for study purposes, and it includes technologies such as NestJS, Node.js, Typescript, Prisma, Redis, and more. It was also developed using DDD (Domain Driven Design) and Clean Architecture principles, and it includes unit and E2E tests for the application's features.
+</p>
+<p>
+  Developed as part of the Ignite Node.js course by <a href="https://www.rocketseat.com.br/">Rocketseat</a>.
+</p>
 
-## Installation
+## 👩🏻‍💻 Technologies
+
+Technologies used to develop this project:
+
+- Node.js
+- Typescript
+- NestJS
+- Prisma
+- Redis
+- PostgreSQL
+- Vitest
+- AWS S3 with Tebi Storage
+
+## ⌨ Getting started
+
+### Installation
 
 ```bash
 $ pnpm install
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
@@ -45,7 +69,7 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
-## Test
+### Test
 
 ```bash
 # unit tests
@@ -58,16 +82,35 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
-## Support
+## 🤔 How to contribute
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+**Make a fork of this repository**
 
-## Stay in touch
+```bash
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+$ gh repo fork amanda-santos/forum-api
+```
 
-## License
+**Follow the steps below**
 
-Nest is [MIT licensed](LICENSE).
+```bash
+# Clone your fork
+$ git clone your-fork-url && cd forum-api
+
+# Create a branch with your feature
+$ git checkout -b my-feature
+
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
+
+# Send the code to your remote branch
+$ git push origin my-feature
+```
+
+After your pull request is merged, you can delete your branch
+
+---
+
+Made with 💜 by Amanda Santos
